@@ -6,10 +6,10 @@ use \WHMCS\Database\Capsule as Capsule;
 function whmcspf_config()
 {
     return array(
-        'name' => '端口转发流量统计', 
-        'description' => '端口转发流量统计', 
-        'author' => 'Flyqie',
-        'version' => '1.5',
+        'name' => 'PortForward Remake', 
+        'description' => 'WHMCS端口转发, 支持TCP/UDP协议及流量统计和端口管理。', 
+        'author' => 'Nyarime & Flyqie',
+        'version' => '2.0',
         'fields' => array(
             'authkey' => array(
                 'FriendlyName' => '验证密钥',
