@@ -17,7 +17,7 @@ $Header = <<<Header
             <div class="collapse navbar-collapse" id="navbar-collapse-1">
               <ul class="nav navbar-nav">
                 <li class=""><a href="javascript:void(0)" data-href="addonmodules.php?module=whmcspf" data-page="info_management">转发列表</a></li>
-                <li class=""><a href="http://www.myserver.group" target="_blank">帮助中心 <span class="glyphicon glyphicon-new-window" aria-hidden="true"></span></a></li>
+                <li class=""><a href="https://api.idc.moe/PortForward/guide.html" target="_blank">帮助中心 <span class="glyphicon glyphicon-new-window" aria-hidden="true"></span></a></li>
               </ul>
             </div>
     </div>
@@ -82,7 +82,7 @@ $info_management = <<<info_managementtemp
                 <thead>
                     <tr>
                         <th>ID</th>
-                        <th>服务ID</th>
+                        <th>服务器ID</th>
                         <th>已用流量(Mb)</th>
 						<th>剩余流量(Mb)</th>
 						<th>总流量(Mb)</th>
