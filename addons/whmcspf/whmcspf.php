@@ -53,7 +53,7 @@ function whmcspf_deactivate()
 	
 	return [
 		'status' => 'success',
-		'description' => '模块卸载成功,你不爱老夏了'
+		'description' => '插件已经成功卸载'
 	];
 }
 function whmcspf_output($vars)
