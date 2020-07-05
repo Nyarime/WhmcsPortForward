@@ -8,8 +8,8 @@ use Illuminate\Database\Capsule\Manager as Capsule;
 
 function portforward_MetaData(){
     return array(
-        'DisplayName' => 'PortForward',
-        'APIVersion' => '1.1', 
+        'DisplayName' => 'PortForward Remake',
+        'APIVersion' => '2.0', 
         'RequiresServer' => true, 
     );
 }
@@ -32,7 +32,7 @@ function portforward_CreateAccount(array $params)
 		$postfields['action'] = 'add';
 		$postfields['serviceid'] = $params['serviceid'];
 		if(!filter_var(trim($params['customfields']['rsip']), FILTER_VALIDATE_IP,FILTER_FLAG_IPV6) && !filter_var(trim($params['customfields']['rsip']), FILTER_VALIDATE_IP)){
-			throw new Exception('IP不正确');
+			throw new Exception('IP地址不正确');
 		}
 		if(!is_numeric(trim($params['customfields']['rport'])) || trim($params['customfields']['rport']) > 25535 || trim($params['customfields']['rport']) < 1){
 			throw new Exception('端口不正确');
